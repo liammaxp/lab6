@@ -1,1 +1,12 @@
 Answer written questions here:
+1.
+We start with a low iteration count because it makes rendering faster and keeps the program responsive. 
+A high iteration count takes more time to calculate every pixel before displaying the next frame.
+
+2.
+We can divide the image into smaller parts and let computers calculate them at the same time. 
+The main thread can collect all the results and combine them into one image.
+
+3.
+Sampling four subpixels and averaging their colors can make the edges smoother.
+However, it requires about four times as many calculations, which makes rendering slower.
